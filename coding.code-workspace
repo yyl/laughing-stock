@@ -1,0 +1,31 @@
+{
+  "folders": [
+    {
+      "name": "digital-footprint-dump",
+      "path": "../digital-footprint-dump"
+    },
+    {
+      "name": "anyblog",
+      "path": "../anyblog"
+    },
+    {
+      "name": "walletpilot",
+      "path": "../cc_mixer"
+    },
+    {
+      "name": "blog",
+      "path": "../blog"
+    },
+    {
+      "name": "site-scrapes",
+      "path": "../site-scrapes"
+    },    
+  ],
+  "settings": {
+    "python.testing.pytestEnabled": true,
+    "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true
+    }
+  }
+}
