@@ -19,7 +19,7 @@
     {
       "name": "site-scrapes",
       "path": "../site-scrapes"
-    },    
+    }
   ],
   "settings": {
     "python.testing.pytestEnabled": true,

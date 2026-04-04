@@ -1,8 +1,15 @@
 {
   "name": "coding-workspace",
   "image": "yyl/dev-tools:latest",
-  "workspaceMount": "source=${localWorkspaceFolder}/..,target=/workspaces/coding,type=bind,consistency=cached",
-  "workspaceFolder": "/workspaces/coding",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspaces/dev-tools,type=bind,consistency=cached",
+  "workspaceFolder": "/workspaces/dev-tools",
+  "mounts": [
+    "source=${localWorkspaceFolder}/../digital-footprint-dump,target=/workspaces/digital-footprint-dump,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/../anyblog,target=/workspaces/anyblog,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/../cc_mixer,target=/workspaces/cc_mixer,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/../blog,target=/workspaces/blog,type=bind,consistency=cached",
+    "source=${localWorkspaceFolder}/../site-scrapes,target=/workspaces/site-scrapes,type=bind,consistency=cached"
+  ],
   "customizations": {
     "vscode": {
       "extensions": [
