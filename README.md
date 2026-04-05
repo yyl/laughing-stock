@@ -29,7 +29,8 @@ docker build -t yyl/dev-tools:latest .
 This repo tracks a parent-level devcontainer and a multi-root workspace:
 
 - `.devcontainer/devcontainer.json` uses `yyl/dev-tools:latest`
-- `coding.code-workspace` starts with `digital-footprint-dump` and can be extended with more repos over time
+- `coding.code-workspace` defines which repos appear in the VS Code workspace
+- `.devcontainer/devcontainer.json` mounts only the repos explicitly listed in that workspace setup, so unlisted sibling folders are not exposed inside the container
 
 Suggested flow:
 
